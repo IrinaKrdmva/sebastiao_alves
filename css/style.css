@@ -1,0 +1,419 @@
+* {
+  margin: 0px;
+}
+body {
+  max-width: 1280px;
+  min-width: 360px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*overflow-x: hidden;*/
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  right: -15px;
+  left: -15px;
+}
+
+p,
+.cookies {
+  font-family: "IBM-Light";
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+}
+
+/*HEADER*/
+
+#top {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.titulo_principal {
+  font-family: "IBM-Bold";
+  font-size: 35px;
+  color: rgb(77, 77, 77);
+  margin-top: 50px;
+}
+
+hr {
+  margin: 15px 55px 0px 55px;
+  color: rgb(56, 53, 53);
+  border-top: 2px solid rgb(112, 112, 112);
+}
+
+#hr-imprensa {
+  height: 1px;
+  background-color: rgb(169, 115, 57);
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.navbar {
+  background-color: transparent !important;
+  font-family: "Lato-Black";
+  font-size: 18px;
+  color: rgb(77, 77, 77);
+  position: relative;
+  display: flex;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.nav-link:hover {
+  color: rgb(180, 125, 51);
+}
+
+.caixadrop {
+  top: 17px;
+  border-radius: 0%;
+  padding: 25px, 30px 35px, 30px;
+  box-shadow: 1px 1px 5px 0px rgb(112, 112, 112);
+}
+
+.dropdown-item {
+  gap: 15px;
+  font-family: "IBM-Medium";
+  font-size: 13px;
+  color: rgb(77, 77, 77);
+}
+
+.dropdown-item:hover {
+  color: rgb(177, 126, 59);
+}
+
+.nav-link {
+  color: rgb(77, 77, 77);
+}
+
+#active {
+  color: rgb(180, 125, 51);
+}
+
+.livro-titulo {
+  font-family: "IBM-Light";
+  text-transform: uppercase;
+  font-size: 40px;
+  color: rgb(77, 77, 77);
+}
+
+.carousel > .carousel-inner {
+  max-width: 1280px;
+  height: auto;
+}
+
+#ind1,
+#ind2,
+#ind3,
+#ind4 {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 40px;
+  background-image: url("imagens/bolabanner1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#ind1.active,
+#ind2.active,
+#ind3.active,
+#ind4.active {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("imagens/bolabanner2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+  width: 40%;
+  text-align: start;
+  top: 190px;
+}
+
+#novidade {
+  font-family: "IBM-Bold";
+  color: rgb(180, 125, 51);
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: rgb(180, 125, 51);
+  color: white;
+  border-radius: 0%;
+  text-transform: uppercase;
+  border: none;
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(112, 112, 112);
+}
+
+/*MAIN*/
+
+.caixa-custom {
+  z-index: 200 !important;
+  position: relative;
+  background-color: white;
+  border: 0px solid black;
+  width: 95%;
+  height: 8rem;
+  top: -45px;
+  box-shadow: 1px 1px 10px 0px rgb(150, 150, 150);
+}
+
+.caixa-imprensa {
+  padding-bottom: 60px;
+  box-shadow: 0px 15px 10px -15px rgb(150, 150, 150);
+}
+
+.imprensa-subt {
+  font-size: 13px;
+  font-family: "IBM-Light";
+  color: rgb(77, 77, 77);
+}
+
+.img-imprensa {
+  width: 100%;
+}
+
+#titulo-caixa,
+.imprensa-titulo {
+  font-family: "IBM-Medium";
+  font-size: 23px;
+  color: rgb(77, 77, 77);
+}
+
+.page-link {
+  border: 0;
+  text-decoration: none;
+}
+
+#pag1.active,
+#pag2.acrtive,
+#pag3.active,
+#pag1:hover,
+#pag2:hover,
+#pag3:hover {
+  color: rgb(177, 126, 59);
+  border: none;
+}
+
+#pag1,
+#pag2,
+#pag3 {
+  font-family: "IBM-Medium";
+  font-size: 23px;
+  color: rgb(77, 77, 77);
+  background-color: transparent !important;
+  bottom: 8px;
+}
+
+#livro1 {
+  font-family: "Lato-Black";
+  font-size: 18px;
+  color: rgb(180, 125, 51);
+}
+
+.conteudo-livro {
+  width: 95%;
+}
+
+.botao {
+  width: 132px;
+  height: 30px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#btn-voltar {
+  background-image: url("imagens/voltar1.svg");
+}
+
+#btn-voltar:hover {
+  background-image: url("imagens/voltar2.svg");
+}
+
+.caixa-bemvindo {
+  z-index: 120;
+  position: relative;
+  bottom: 45px;
+  background-color: white;
+  width: 95%; /*usa vw ou %*/
+  height: 500px; /*usa vw ou %*/
+  margin-left: 90px;
+  box-shadow: 1px 1px 10px 0px rgb(112, 112, 112);
+}
+
+#bv-texto,
+#text-ultimos {
+  text-align: justify;
+}
+
+#destaques {
+  top: 70px;
+}
+
+#btn-bv,
+.btn-card {
+  float: right;
+}
+
+.bvimg > img {
+  height: 396px;
+  width: 312px;
+}
+
+.card,
+.bvimg > img {
+  box-shadow: 3px 3px 10px rgb(112, 112, 112);
+  border-radius: 0%;
+}
+
+.card-title {
+  font-family: "IBM-Medium";
+  font-size: 23px;
+  color: rgb(77, 77, 77);
+  text-transform: uppercase;
+}
+
+.sub-titulo {
+  font-family: "Lato-Bold";
+  font-size: 13px;
+  color: rgb(180, 125, 51);
+  text-transform: uppercase;
+}
+
+#anterior {
+  width: 17px;
+  height: 30px;
+  background-image: url("imagens/setaesquerda1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#anterior:hover {
+  width: 17px;
+  height: 30px;
+  background-image: url("imagens/setaesquerda2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#seguinte {
+  width: 17px;
+  height: 30px;
+  background-image: url("imagens/setadireita1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#seguinte:hover {
+  width: 17px;
+  height: 30px;
+  background-image: url("imagens/setadireita2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linha {
+  height: 27px;
+  width: auto;
+  margin: 15px 55px 0px 55px;
+  color: rgb(56, 53, 53);
+  border-top: 1px solid rgb(112, 112, 112);
+}
+
+.c-titulo {
+  color: rgb(177, 126, 59);
+  font-family: "IBM-Medium";
+  font-size: 15px;
+}
+
+.linha1 {
+  width: 60px;
+  color: rgb(56, 53, 53);
+  border-top: 1px solid rgb(112, 112, 112);
+}
+
+/*FOOTER*/
+
+.navbar-bottom {
+  background-color: transparent !important;
+  font-family: "Lato-Black";
+  font-size: 16px;
+  color: rgb(77, 77, 77);
+  position: relative;
+  display: flex;
+}
+
+.contactos,
+.social {
+  font-family: "IBM-Medium";
+  color: rgb(77, 77, 77);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.contactos-titulo {
+  color: rgb(177, 126, 59);
+  font-family: "IBM-Medium";
+  font-size: 15px;
+  text-align: left;
+}
+
+.livro_rec {
+  width: 77px;
+  height: 31px;
+}
+
+.realc {
+  width: 125px;
+  height: 29px;
+}
+
+.icone {
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#insta {
+  background-image: url("imagens/instagram1.svg");
+}
+
+#face {
+  background-image: url("imagens/facebook1.svg");
+}
+
+#linked {
+  background-image: url("imagens/linkedin1.svg");
+}
+
+#insta:hover {
+  background-image: url("imagens/instagram2.svg");
+}
+
+#face:hover {
+  background-image: url("imagens/facebook2.svg");
+}
+
+#linked:hover {
+  background-image: url("imagens/linkedin2.svg");
+}
